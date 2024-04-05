@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz Page Use</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: sans-serif;
+      }
+
+      header {
+         position: absolute;
+         display: flex;
+         flex-direction: row;
+         top: 0;
+         left: 0;
+         right: 0;
+         padding: 10px 60px;
+         justify-content: space-between;
+         background: linear-gradient(to right, rgb(13, 0, 72), rgb(108, 0, 108));
+      }
+
+      .logo-button {
+         border-style: none;
+         border-radius: 2px;
+         color: white;
+         padding: 7px 22px;
+         background: linear-gradient(to right, rgb(79, 0, 216), rgb(100, 36, 209));
+      }
+
+      .rightside {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+      }
+
+      .header-button {
+         border-style: none;
+         border-radius: 2px;
+         color: white;
+         padding: 7px 22px;
+         background: transparent;
+      }
+
+      body {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: linear-gradient(to right, rgb(13, 0, 72), rgb(108, 0, 108));
+      }
+
+      .outer-box {
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         align-items: center;
+         top: 80px;
+         bottom: 80px;
+         height: 550px;
+         width: 90%;
+         background: linear-gradient(to right, rgb(55, 103, 215), rgb(220, 69, 220));
+         padding: 40px 20px;
+         border-radius: 15px;
+      }
+
+      .question-box {
+         display: flex;
+         flex-direction: column;
+         background-color: rgb(100, 36, 209);
+         color: white;
+         padding: 10px 12px;
+         width: 95%;
+         height: 100px;
+         border-radius: 10px;
+         font-size: medium;
+         font-weight: 600;
+         justify-content: space-around;
+         align-items: center;
+      }
+
+      .question {
+         margin-top: 5px;
+         width: 98%;
+         height: 60px;
+         border-radius: 10px;
+         background-color: rgb(13, 0, 72);
+         color: white;
+      }
+
+      .option-box {
+         display: flex;
+         flex-direction: column;
+         width: 60%;
+         justify-content: center;
+      }
+
+      .choice-box {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-top: 10px 25px;
+         border-radius: 10px;
+         height: 60px;
+         width: 100%;
+         background-color: rgb(100, 36, 209);
+         margin-top: 23px;
+      }
+
+      .choice {
+         width: 90%;
+         height: 60%;
+         border-radius: 10px;
+         vertical-align: middle;
+         color: white;
+         background-color: rgb(13, 0, 72);
+         padding: 10px 30px;
+      }
+
+      .lowest-box {
+         display: flex;
+         width: 95%;
+         justify-content: space-between;
+         margin-top: 20px;
+      }
+
+      .button-container {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .prev-next-button {
+         border: none;
+         padding: 10px 20px;
+         border-radius: 10px;
+         height: 45px;
+         font-size: small;
+         color: white;
+         background-image: linear-gradient(to right, rgb(20, 94, 173), rgb(55, 196, 243));
+         cursor: pointer;
+      }
+
+      footer {
+         position: absolute;
+         display: flex;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         padding: 13px;
+         background: linear-gradient(to right, rgb(55, 103, 215), rgb(220, 69, 220));
+         justify-content: center;
+      }
+
+      .reserve-rights {
+         font-size: small;
+         color: white;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="logo-button">
+         Logo
+      </div>
+      <div class="rightside">
+         <div>
+            <button class="header-button">Sign In</button>
+         </div>
+         <div>
+            <button class="header-button">Create</button>
+         </div>
+      </div>
+   </header>
+   <div class="outer-box">
+      <div class="question-box">
+         Question
+         <div class="question"></div>
+      </div>
+      <div class="option-box">
+         <div class="choice-box">
+            <div class="choice">
+               Choice-1
+            </div>
+         </div>
+         <div class="choice-box">
+            <div class="choice">
+               Choice-2
+            </div>
+         </div>
+         <div class="choice-box">
+            <div class="choice">
+               Choice-3
+            </div>
+         </div>
+         <div class="choice-box">
+            <div class="choice">
+               Choice-4
+            </div>
+         </div>
+      </div>
+      <div class="lowest-box">
+         <div class="button-container">
+            <button class="prev-next-button">Previous</button>
+         </div>
+         <div class="button-container">
+            <button class="prev-next-button">Next</button>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <a class="reserve-rights">
+         All Rights Reserved | abcd@gmail.com
+      </a>
+   </footer>
+</body>
+
+</html>
